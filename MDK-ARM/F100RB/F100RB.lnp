@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"f100rb\startup_stm32f100xb.o"
+"f100rb\system_stm32f1xx.o"
+"f100rb\main.o"
+"f100rb\stm32f1xx_it.o"
+"f100rb\stm32f1xx_hal_msp.o"
+"f100rb\lcd.o"
+"f100rb\stm32f1xx_hal_flash_ex.o"
+"f100rb\stm32f1xx_hal_tim_ex.o"
+"f100rb\stm32f1xx_hal_gpio.o"
+"f100rb\stm32f1xx_hal_rcc.o"
+"f100rb\stm32f1xx_hal_flash.o"
+"f100rb\stm32f1xx_hal_cortex.o"
+"f100rb\stm32f1xx_hal_tim.o"
+"f100rb\stm32f1xx_hal_dma.o"
+"f100rb\stm32f1xx_hal_pwr.o"
+"f100rb\stm32f1xx_hal_rcc_ex.o"
+"f100rb\stm32f1xx_hal.o"
+"f100rb\stm32f1xx_hal_gpio_ex.o"
+"f100rb\stm32f1xx_hal_adc.o"
+"f100rb\stm32f1xx_hal_adc_ex.o"
+"f100rb\stm32f1xx_hal_uart.o"
+--library_type=microlib --strict --scatter "F100RB\F100RB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "F100RB.map" -o F100RB\F100RB.axf
